@@ -1,0 +1,22 @@
+<a href="#" class="list-group-item clearfix">
+  <div class="pul-left">
+    <h5>@{{post.user.nickname}}</h5>
+    <h4 class="list-group-item-heading">{{ post.title }}</h4>
+    <p class="list-group-item-text">{{ post.text }}</p>
+    <br/>
+    <img src="assets/images/like.png" style="max-height: 18px; max-width: 18px;">
+    <h6>{{ post.likes}}</h6>
+    <h6>{{ post.timeCreated }}}</h6>
+  </div>
+  <span class="pull-right">
+
+
+      </span>
+  <a href="#" class="list-group-item clearfix">
+    <h5 style="text-align: center; color:gray">Comments</h5> <img src="assets/images/comments.png" style="max-height: 18px; max-width: 18px;float: right">
+    <a href="#" class="list-group-item clearfix" *ngFor="let comment of post.comments">
+      <h6>@{{ comment.id }}</h6>
+      <p class="list-group-item-text">{{ comment.comment }}</p>
+    </a>
+  </a>
+</a>

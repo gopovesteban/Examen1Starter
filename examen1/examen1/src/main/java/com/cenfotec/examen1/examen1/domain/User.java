@@ -16,7 +16,7 @@ public class User {
 
     private String status;
 
-    @OneToMany(cascade=CascadeType.ALL)
+    @OneToMany(cascade=CascadeType.MERGE)
     private Set<Tag> preferences = new HashSet<>();
 
 

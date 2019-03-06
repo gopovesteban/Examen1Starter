@@ -1,5 +1,7 @@
 package com.cenfotec.examen1.examen1.domain;
 
+import org.hibernate.annotations.CreationTimestamp;
+
 import javax.persistence.*;
 import java.sql.Timestamp;
 import java.util.HashSet;
@@ -19,14 +21,35 @@ public class Post {
 
     private String status;
 
+    private int likes;
+
+    @OneToOne(fetch=FetchType.EAGER)
+    private User user;
+
     @OneToOne(fetch=FetchType.EAGER)
     private Tag tag;
 
+    @CreationTimestamp
     private Timestamp timeCreated;
 
     @OneToMany(cascade = CascadeType.ALL)
     private Set<Comment> comments = new HashSet<>();
 
+    public int getLikes() {
+        return likes;
+    }
+
+    public void setLikes(int likes) {
+        this.likes = likes;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 
     public Tag getTag() {
         return tag;

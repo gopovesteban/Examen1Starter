@@ -1,0 +1,8 @@
+<div class="row">
+  <h5>{{post.tag}}</h5>
+  <div class="col-xs-12">
+    <app-recommended-post-item *ngFor="let recommendedPost of recommendedPosts"
+                   [post] = "recommendedPost"
+    ></app-recommended-post-item>
+  </div>
+</div>
