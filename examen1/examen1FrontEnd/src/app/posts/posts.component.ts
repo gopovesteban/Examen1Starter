@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {PostEditComponent} from './post-edit/post-edit.component';
 
 @Component({
   selector: 'app-posts',

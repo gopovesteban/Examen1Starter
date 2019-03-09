@@ -13,6 +13,8 @@ import { RecommendedPostsListComponent } from './recommended-posts/recommended-p
 import { RecommendedPostItemComponent } from './recommended-posts/recommended-post-item/recommended-post-item.component';
 import { RecommendedCommentsComponent } from './recommended-posts/recommended-comments/recommended-comments.component';
 import {Examen1Service} from './services/examen1.service';
+import {PostEditComponent} from './posts/post-edit/post-edit.component';
+import {CommentEditComponent} from './posts/comments/comment-edit/comment-edit.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import {Examen1Service} from './services/examen1.service';
     PostsComponent,
     PostsListComponent,
     PostItemComponent,
+    PostEditComponent,
+    CommentEditComponent,
     CommentsComponent,
     HeaderComponent,
     RecommendedPostsComponent,

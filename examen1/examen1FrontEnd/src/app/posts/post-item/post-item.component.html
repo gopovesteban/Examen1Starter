@@ -9,9 +9,9 @@
     <h6>{{ post.timeCreated }}}</h6>
   </div>
   <span class="pull-right">
-
       </span>
   <a href="#" class="list-group-item clearfix">
+    <app-comment-edit></app-comment-edit>
     <h5 style="text-align: center; color:gray">Comments</h5> <img src="assets/images/comments.png" style="max-height: 18px; max-width: 18px;float: right">
     <a href="#" class="list-group-item clearfix" *ngFor="let comment of post.comments">
       <h6>@{{ comment.id }}</h6>

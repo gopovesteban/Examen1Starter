@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import { PostsListComponent } from '../posts-list/posts-list.component';
+import { CommentEditComponent } from '../comments/comment-edit/comment-edit.component';
 
 @Component({
   selector: 'app-post-item',
